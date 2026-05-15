@@ -1,1 +1,1 @@
-Codewars katas for fun
+Codewars katas for fun (no AI involved)
