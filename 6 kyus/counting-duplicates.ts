@@ -37,7 +37,12 @@ const dc = (text: string) => {
   return count;
 };
 
-// One liner: Alternative solution using Map and array methods
+/**
+ * One liner solution using Map and Array methods.
+ *
+ * This one is more concise but may be less efficient due to the use of multiple array methods, and the creation of intermediate arrays.
+ * The first solution is more straightforward and may be easier to read.
+ */
 const _dc = (text: string) =>
   [
     ...text
