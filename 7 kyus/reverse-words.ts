@@ -15,3 +15,7 @@ export const rw = (str: string): string =>
     .split(" ")
     .map((_, idx, arr) => arr.at(-(idx + 1)))
     .join(" ");
+
+// One liner O(n) with arr reverse native method
+export const _rw = (str: string): string =>
+  Array.from(str).reverse().join("").split(" ").reverse().join(" ");
