@@ -4,6 +4,8 @@
  * Examples
  * "This is an example!" ==> "sihT si na !elpmaxe"
  * "double  spaces"      ==> "elbuod  secaps"
+ *
+ * @see https://www.codewars.com/kata/5259b20d6021e9e14c0010d4/train/typescript
  */
 
 // One liner O(n)
