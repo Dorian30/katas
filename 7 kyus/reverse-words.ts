@@ -19,3 +19,25 @@ export const rw = (str: string): string =>
 // One liner O(n) with arr reverse native method
 export const _rw = (str: string): string =>
   Array.from(str).reverse().join("").split(" ").reverse().join(" ");
+
+// More imperative solution. Still O(n) but with better space complexity.
+export const __rw = (str: string): string => {
+  let reversedString = "";
+  let word = "";
+
+  for (let idx = 0; idx < str.length; idx++) {
+    const char = str[str.length - (idx + 1)];
+    if (char === " ") {
+      if (word) {
+        reversedString = " " + word + reversedString;
+        word = "";
+      } else {
+        reversedString = " " + reversedString;
+      }
+    } else {
+      word += char;
+    }
+  }
+
+  return word + reversedString;
+};
